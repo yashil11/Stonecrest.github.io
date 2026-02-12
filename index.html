@@ -115,15 +115,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.5));
-        animation: logoGlow 3s ease-in-out infinite;
       }
-
-      @keyframes logoGlow {
-        0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.5)); }
-        50% { filter: drop-shadow(0 0 35px rgba(0, 255, 136, 0.8)); }
-      }
-
+      
       nav ul {
         display: flex;
         list-style: none;
@@ -159,7 +152,6 @@
 
       nav ul li a:hover {
         color: var(--primary-green);
-        text-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
       }
 
       /* HERO */
@@ -257,25 +249,6 @@
         font-size: 9rem;
         letter-spacing: 12px;
         text-shadow: 
-          0 0 30px rgba(0, 255, 136, 0.8),
-          0 0 60px rgba(0, 255, 136, 0.5),
-          0 0 90px rgba(0, 255, 136, 0.3);
-        animation: neonPulse 2s ease-in-out infinite;
-      }
-
-      @keyframes neonPulse {
-        0%, 100% {
-          text-shadow: 
-            0 0 30px rgba(0, 255, 136, 0.8),
-            0 0 60px rgba(0, 255, 136, 0.5),
-            0 0 90px rgba(0, 255, 136, 0.3);
-        }
-        50% {
-          text-shadow: 
-            0 0 40px rgba(0, 255, 136, 1),
-            0 0 80px rgba(0, 255, 136, 0.7),
-            0 0 120px rgba(0, 255, 136, 0.5);
-        }
       }
 
       @keyframes glitchTitle {
@@ -334,9 +307,6 @@
         opacity: 0;
         animation: fadeInUp 1.2s ease forwards 1.3s;
         transition: all 0.4s ease;
-        box-shadow: 
-          0 0 30px rgba(0, 255, 136, 0.4),
-          inset 0 0 0 var(--primary-green);
       }
 
       .btn::before {
@@ -356,9 +326,6 @@
 
       .btn:hover {
         transform: translateY(-5px);
-        box-shadow: 
-          0 0 50px rgba(0, 255, 136, 0.8),
-          0 10px 40px rgba(0, 255, 136, 0.3);
         letter-spacing: 3px;
       }
 
@@ -529,7 +496,6 @@
       .gallery-item:hover {
         border-color: var(--primary-green);
         transform: scale(1.05) rotate(2deg);
-        box-shadow: 0 20px 60px rgba(0, 255, 136, 0.4);
         z-index: 10;
       }
 
@@ -648,8 +614,6 @@
         transform: translateY(-10px) scale(1.02);
         border-color: var(--primary-green);
         box-shadow: 
-          0 20px 60px rgba(0, 255, 136, 0.2),
-          inset 0 0 30px rgba(0, 255, 136, 0.05);
       }
 
       .detail-card:hover .card-icon {
